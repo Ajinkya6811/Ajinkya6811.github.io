@@ -123,7 +123,7 @@ const PlayerWon = () => {
 
 const restart = () => {
 
-    resultText.innerText = 'Lets play Tic Tac Toe once again!!!';
+    resultText.innerText = 'Lets play Tic Tac Toe game!!!';
 
     for (let i = 0; i < board_data.length; i++) {
         board_data[i] = null;

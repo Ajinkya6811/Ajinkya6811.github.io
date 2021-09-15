@@ -1,0 +1,57 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    color: blueviolet;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+*{box-sizing: border-box;}
+
+h1{font: size 70px;text-transform: uppercase;}
+
+.container{
+    padding: 50px;
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#gameBoxes{
+    width: 540px;
+    display: flex;
+    flex-wrap:wrap;
+    margin: top 40px;;
+
+
+}
+
+.box{
+
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    font-size: 150px;
+    
+}
+
+button{
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: rgb(211, 51, 190);
+    font-size: 25px;
+    transition: 200ms transform;
+    font-family: fantasy;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}

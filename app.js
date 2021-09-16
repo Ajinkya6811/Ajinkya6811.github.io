@@ -33,7 +33,8 @@ const Draw = () => {
         }
 
         box.style = style;
-        box.addEventListener('click', boxClicked);
+        if(PlayerWon()!=1)
+            box.addEventListener('click', boxClicked);
 
     })
 
@@ -43,8 +44,9 @@ const boxClicked = (e) => {
     const id = e.target.id;
     console.log(id);
     if(!board_data[id]) {
+        if(PlayerWon()!=1){
         board_data[id] = currentPlayer;
-        e.target.innerText = currentPlayer;
+        e.target.innerText = currentPlayer;}
 
 
         if(PlayerWon()){
@@ -123,7 +125,7 @@ const PlayerWon = () => {
 
 const restart = () => {
 
-    resultText.innerText = 'Lets play Tic Tac Toe game!!';
+    resultText.innerText = 'Lets play Tic Tac Toe game!!!';
 
     for (let i = 0; i < board_data.length; i++) {
         board_data[i] = null;
